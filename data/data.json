@@ -36,33 +36,7 @@
   ],
   "publication": [
     {
-      "title": "Extracting Attentive Social Temporal Excitation for Sequential Recommendation",
-      "author": [
-        "Yunzhe Li",
-        "Yue Ding", 
-        "Bo Chen", 
-        "Xin Xin", 
-        "Yule Wang", 
-        "Yuxiang Shi", 
-        "Ruiming Tang", 
-        "Dong Wang"	
-      ],
-      "author_order": 1,
-      "conf_or_jour": "ACM International Conference on Conference on Knowledge Management (CIKM) 2021"
-    },
-    {
-      "title": "CMT: Cluster-Wise Multi-Objective Training for Long-Tail Recommendation",
-      "author": [
-        "Yule Wang", 
-        "Xin Xin", 
-        "Yue Ding", 
-        "Yunzhe Li",
-        "Yuxiang Shi", 
-        "Dong Wang"
-      ],
-      "author_order": 4,
-      "conf_or_jour": "IEEE International Conference on Data Mining (ICDM) 2021, Under Review"
-    }
+     
    
     }
   ],
