@@ -62,23 +62,8 @@
       ],
       "author_order": 4,
       "conf_or_jour": "IEEE International Conference on Data Mining (ICDM) 2021, Under Review"
-    },
-    {
-      "title": "AIRec: Attentive intersection model for tag-aware recommendation",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0925231220312789?via%3Dihub",
-      "author": [
-        "Bo Chen", 
-        "Yue Ding", 
-        "Xin Xin", 
-        "Yunzhe Li", 
-        "Yule Wang", 
-        "Dong Wang"
-      ],
-      "author_order": 4,
-      "conf_or_jour": "Neurocomputing (NC), 2021",
-      "resource": {
-        "paper_url": "files/AIRec.pdf"
-      }
+    }
+   
     }
   ],
   "honor_award": [
