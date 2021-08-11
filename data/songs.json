@@ -1,0 +1,113 @@
+{
+  "title": "Welcome to my music world!",
+  "intro": "Here are some of my favorite songs, most of which are Chinese songs. It is fine if you don't understand the lyric, because sometimes native speakers can not figure out as well. So just enjoy the rhythm! Many Chinese song names are translated by myself. Hope you like them! :) \n If you have songs to share, feel free to drop me an email.",
+  "message": "The background would play in ",
+  "path": "songs/",
+  "counter": 3,
+  "songs":
+  [
+    {
+      "name":"新的心跳",
+      "name_tr": "Heartbeat",
+      "singer":"邓紫棋 (Gem Tang)",
+      "album":"新的心跳",
+      "file":"新的心跳.mp3",
+      "style": "Pop",
+      "year": 2015,
+      "youtube_music": "https://music.youtube.com/watch?v=vDR-e3W6ARc&list=RDAMVMvDR-e3W6ARc",
+      "qq_music": "https://y.qq.com/n/yqq/song/004LHkGL1GVdZo.html",
+      "netease_music": "https://music.163.com/#/song?id=33190007"
+    },
+    {
+      "name":"Too Bad",
+      "singer":"林俊杰 (JJ Lin)",
+      "album":"和自己对话 From M.E. To Myself",
+      "style": "Pop",
+      "year": 2015,
+      "youtube_music": "https://music.youtube.com/watch?v=isLhCYJgnJ8&list=RDAMVMisLhCYJgnJ8",
+      "qq_music": "https://y.qq.com/n/yqq/song/004czErX2hy62A.html",
+      "netease_music": "https://music.163.com/#/song?id=40147559"
+    },
+    {
+      "name":"任意门",
+      "name_tr": "Dokodemo Door",
+      "singer":"五月天 (Mayday)",
+      "album":"自传",
+      "style": "Pop",
+      "year": 2016,
+      "youtube_music": "https://music.youtube.com/watch?v=5Ey82Neayak&list=RDAMVM5Ey82Neayak",
+      "qq_music": "https://y.qq.com/n/yqq/song/000BRHvL0AccHh.html"
+    },
+    {
+      "name":"爱笑的眼睛",
+      "name_tr": "Smiling Eyes",
+      "singer":"林俊杰 (JJ Lin)",
+      "album":"她说",
+      "file":"爱笑的眼睛.mp3",
+      "style": "Pop",
+      "year": 2010,
+      "youtube_music": "https://music.youtube.com/watch?v=jsQnMU2lZao&list=RDAMVMjsQnMU2lZao",
+      "qq_music": "https://y.qq.com/n/yqq/song/004JI7mA1UQeZq.html",
+      "netease_music": "https://music.163.com/#/song?id=108245"
+    },
+    {
+      "name":"将故事写成我们",
+      "name_tr": "Compose Our Story",
+      "singer":"林俊杰 (JJ Lin)",
+      "album":"将故事写成我们",
+      "file":"将故事写成我们.mp3",
+      "style": "Pop",
+      "year": 2019,
+      "youtube_music": "https://music.youtube.com/watch?v=kN-nGO4jzPI&list=RDAMVMkN-nGO4jzPI",
+      "qq_music": "https://y.qq.com/n/yqq/song/001LMj8V1Leoxy.html",
+      "netease_music": "https://music.163.com/#/song?id=1391477429"
+    },
+    {
+      "name":"Long Live",
+      "singer":"Taylor Swift / Paula Fernandes",
+      "album":"Speak Now (Deluxe Package)",
+      "file":"Long Live.mp3",
+      "style": "Country",
+      "year": 2010,
+      "youtube_music": "https://music.youtube.com/watch?v=TI4g93b_5_s&list=RDAMVMTI4g93b_5_s",
+      "qq_music": "https://y.qq.com/n/yqq/song/0016hWfr285oV5.html",
+      "netease_music": "https://music.163.com/#/song?id=2001459"
+    },
+    {
+      "name":"Imperfect",
+      "singer":"周柏豪 (Pakho)",
+      "album":"Imperfect Collection",
+      "file":"Imperfect.mp3",
+      "style": "Pop",
+      "year": 2012,
+      "youtube_music": "https://music.youtube.com/watch?v=AFaM7HrPfc8&list=RDAMVMAFaM7HrPfc8",
+      "qq_music": "https://y.qq.com/n/yqq/song/0031Y97h1meCg3.html",
+      "netease_music": "https://music.163.com/#/song?id=25706228"
+    },
+    {
+      "name":"淘汰",
+      "name_tr": "Eliminated Love",
+      "singer":"陈奕迅 (Eason Chan)",
+      "album":"认了吧",
+      "file":"淘汰.mp3",
+      "style": "Pop",
+      "year": 2007,
+      "youtube_music": "https://music.youtube.com/watch?v=O8bTDWz8T8c&list=RDAMVMO8bTDWz8T8c",
+      "qq_music": "https://y.qq.com/n/yqq/song/0029dqHX0nuawd.html",
+      "netease_music": "https://music.163.com/#/song?id=65528"
+    },
+
+    {
+      "name":"宏愿",
+      "name_tr": "Ambition",
+      "singer":"周柏豪 (Pakho)",
+      "album":"Follow",
+      "file":"宏愿.mp3",
+      "style": "Pop",
+      "year": 2012,
+      "youtube_music": "https://music.youtube.com/watch?v=uY9wYezFbzY&list=RDAMVMuY9wYezFbzY",
+      "qq_music": "https://y.qq.com/n/yqq/song/004aEV821P0wRE.html",
+      "netease_music": "https://music.163.com/#/song?id=191534"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "head": {
+    "title": "Yunzhe Li",
+    "icon": "images/SJTU.png"
+  },
+  "header":
+  {
+    "index": true,
+    "news": true,
+    "research": true,
+    "publication": true,
+    "fun": true
+  },
+  "name_en": "Yunzhe Li",
+  "name_zn": "李蕴哲",
+  "name_tag": "M.S. Student",
+  "tel": "+86 15589351332",
+  "email": "liyzh28@sjtu.edu.cn",
+  "website": "liyzh28@github.io",
+  "github": "https://github.com/liyzh28",
+  "scholar": "https://scholar.google.com/citations?user=QafNtQIAAAAJ",
+  "city": "Shanghai, China",
+  "avatar": "images/default.JPG",
+  "introduction": "I am a first-year Ph.D. student from <a href=\"https://en.sjtu.edu.cn\">SCSE</a> of <a href=\"https://www.ntu.edu.sg/Pages/home.aspx\">Nanyang Technological University (NTU)</a>, supervised by Prof. <a href=\"https://personal.ntu.edu.sg/limo/\">Mo Li</a> and co-supervised by Assoc. Prof. <a href=\"https://personal.ntu.edu.sg/tanrui/\">Rui Tan</a>.\n                                I received my B.S. degree from the School of Software of <a href=\"https://www.nju.edu.cn/EN/\">Nanjing University (NJU)</a> and Master's degree from <a href=\"http://english.seiee.sjtu.edu.cn/\">SEIEE</a> of <a href=\"http://en.sjtu.edu.cn/\">Shanghai Jiao Tong University (SJTU)</a> under the supervision of Prof. <a href=\"https://scholar.google.com/citations?user=OBVW2YgAAAAJ&hl=zh-CN&oi=sra\">Dong Wang</a>.\n                                <br>\n                                <br>\n                                I am broadly interested in ubiquitous computing, especially in related fields of building wearable-based or wireless-based sensing interfaces to bridge gaps between computing resources and human's daily lives. My current research focuses on smartphone-based sensing, including human activity recognition, localization, authentication, etc.\n                                <br>",
+  "cv_url": "files/resume-xht.pdf",
+  "education": [
+     {
+      "school": "Nanyang Technological University, NTU",
+      "major": "Ph.D. of Computer Science",
+      "period": "Jan. 2021 - Till Now"
+    },
+     {
+      "school": "Shanghai Jiao Tong University, SJTU",
+      "major": "Master of Software Engineering",
+      "period": "Sept. 2017 - Mar. 2020"
+    },
+    {
+      "school": "Nanjing University, NJU",
+      "major": "Bachelor of Software Engineering",
+      "period": "Sept. 2013 - Jun. 2017"
+    }
+  ],
+  "publication": [
+    {
+      "title": "FaHo: Deep Learning Enhanced Holographic Localization for RFID tags",
+      "url": "https://dl.acm.org/citation.cfm?id=3360035",
+      "author": ["Huatao Xu", "Dong Wang", "Run Zhao", "Qian Zhang"],
+      "author_order": 1,
+      "conf_or_jour": "ACM SenSys 2019",
+      "resource":{
+        "paper_url": "files/FaHo.pdf",
+        "slide_url": "files/FaHo.pptx"
+      }
+    },
+    {
+      "title": "AdaRF: Adaptive RFID-based Indoor Localization Using Deep Learning Enhanced Holography",
+      "url": "https://dl.acm.org/citation.cfm?doid=3361560.3351271",
+      "author": ["Huatao Xu", "Dong Wang", "Run Zhao", "Qian Zhang"],
+      "author_order": 1,
+      "conf_or_jour": "ACM IMWUT (UbiComp) 2019",
+      "resource":{
+        "paper_url": "files/AdaRF.pdf",
+        "slide_url": "files/AdaRF.pptx"
+      }
+    },
+    {
+      "title": "PEC: Synthetic Aperture RFID Localization with Aperture Position Error Compensation",
+      "url": "https://ieeexplore.ieee.org/document/8824882",
+      "author": ["Run Zhao", "Dong Wang", "Qian Zhang", "Haonan Chen", "Huatao Xu"],
+      "author_order": 5,
+      "conf_or_jour": "IEEE SECON 2019",
+      "resource":{
+        "paper_url": "files/PEC.pdf",
+        "slide_url": "files/PEC.pptx"
+      }
+    },
+    {
+      "title": "PRMS: Phase and RSSI based Localization System for Tagged Objects on Multilayer with a Single Antenna",
+      "url": "https://dl.acm.org/citation.cfm?id=3242138",
+      "author": ["Huatao Xu", "Run Zhao", "Qian Zhang", "Dong Wang"],
+      "author_order": 1,
+      "conf_or_jour": "ACM MSWiM 2018",
+      "resource":{
+        "paper_url": "files/PRMS.pdf",
+        "slide_url": "files/PRMS.pptx"
+      }
+    }
+  ],
+  "honor_award": [
+    "2019 Shanghai Outstanding Graduate Student",
+    "2019 China National Scholarship",
+    "2017-2019 Shanghai Jiao Tong University First-class Scholarship",
+    "2016 Nanjing University Inspirational Scholarship"
+  ],
+  "news":[
+    {
+      "date": "Jan. 2021",
+      "content": "Start to pursue for my Ph.D. degree in <span class=\"item-bold\">NTU</span>."
+    },
+    {
+      "date": "Dec. 2020",
+      "content": "Finish internship at Local Life Research Institute of Alibaba (Eleme)."
+    },
+    {
+      "date": "Apr. 2020",
+      "content": "Start internship at Local Life Research Institute of Alibaba (Eleme)."
+    },
+    {
+      "date": "Mar. 2020",
+      "content": "Graduate from <span class=\"item-bold\">SJTU</span>."
+    },
+    {
+      "date": "Jan. 2020",
+      "content": "Successfully defend my master's thesis."
+    },
+    {
+      "date": "Nov. 2019",
+      "content": "Attend <span class=\"item-bold\">SenSys 2019</span> in New York, USA."
+    },
+    {
+      "date": "Sept. 2019",
+      "content": "Attend <span class=\"item-bold\">Ubicomp 2019</span> in London, UK."
+    },
+    {
+      "date": "Aug. 2019",
+      "content": "Our paper \"FaHo\" has been accepted by <span class=\"item-bold\">SenSys 2019</span>."
+    },
+    {
+      "date": "Jul. 2019",
+      "content": "Our paper \"AdaRF\" has been accepted by <span class=\"item-bold\">Ubicomp 2019</span> after a cycle of major revisions."
+    },
+    {
+      "date": "Apr. 2019",
+      "content": "Our paper \"PEC\" has been accepted by <span class=\"item-bold\">SECON 2019</span>."
+    },
+    {
+      "date": "Nov. 2018",
+      "content": "Attend <span class=\"item-bold\">MSWiM 2019</span> in Montreal, Canada."
+    },
+    {
+      "date": "Apr. 2019",
+      "content": "Our paper \"PRMS\" has been accepted by <span class=\"item-bold\">MSWiM 2018</span>."
+    }
+  ],
+  "research": [
+    {
+      "topic": "RFID Sensing",
+      "project": [
+        {
+          "name": "Localization",
+          "intro": "Analyze the features of RFID signals and design robust indoor localization to locate RFID tags accurately. We propose deep learning enhance holography (DLEH) to design adaptive localization model by combing RFID based synthetic aperture radar (SAR) and convolutional neural network (CNN). We also introduce compress sensing algorithms into RFID localization.",
+          "publication": [
+            {
+              "title": "FaHo",
+              "url": "https://dl.acm.org/citation.cfm?id=3360035"
+            },
+            {
+              "title": "AdaRF",
+              "url": "https://dl.acm.org/citation.cfm?doid=3361560.3351271"
+            },
+            {
+              "title": "PEC",
+              "url": "https://ieeexplore.ieee.org/document/8824882"
+            },
+            {
+              "title": "PRMS",
+              "url": "https://dl.acm.org/citation.cfm?id=3242138"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "language": ["Chinese", "English"],
+  "hobby": ["Travelling", "Swimming", "Singing", "Cooking"],
+  "information": "Latest updated by July 2021",
+  "message": ""
+}
