@@ -21,23 +21,18 @@
   "scholar": "https://scholar.google.com/citations?user=QafNtQIAAAAJ",
   "city": "Shanghai, China",
   "avatar": "images/default.JPG",
-  "introduction": "I am a first-year Ph.D. student from <a href=\"https://en.sjtu.edu.cn\">SCSE</a> of <a href=\"https://www.ntu.edu.sg/Pages/home.aspx\">Nanyang Technological University (NTU)</a>, supervised by Prof. <a href=\"https://personal.ntu.edu.sg/limo/\">Mo Li</a> and co-supervised by Assoc. Prof. <a href=\"https://personal.ntu.edu.sg/tanrui/\">Rui Tan</a>.\n                                I received my B.S. degree from the School of Software of <a href=\"https://www.nju.edu.cn/EN/\">Nanjing University (NJU)</a> and Master's degree from <a href=\"http://english.seiee.sjtu.edu.cn/\">SEIEE</a> of <a href=\"http://en.sjtu.edu.cn/\">Shanghai Jiao Tong University (SJTU)</a> under the supervision of Prof. <a href=\"https://scholar.google.com/citations?user=OBVW2YgAAAAJ&hl=zh-CN&oi=sra\">Dong Wang</a>.\n                                <br>\n                                <br>\n                                I am broadly interested in ubiquitous computing, especially in related fields of building wearable-based or wireless-based sensing interfaces to bridge gaps between computing resources and human's daily lives. My current research focuses on smartphone-based sensing, including human activity recognition, localization, authentication, etc.\n                                <br>",
+  "introduction": "I am a two-year academic master' student from <a href=\"https://english.seiee.sjtu.edu.cn\">SEIEE</a> of <a href=\"https://en.sjtu.edu.cn\">Shanghai Jiao Tong University (SJTU)</a>, supervised by Prof. <a href=\"https://scholar.google.com/citations?user=OBVW2YgAAAAJ&hl=zh-CN&oi=sra\">Dong Wang</a>.\n I received my B.S. degree from the <a herf=\"cse.sysu.edu.cn\"> School of Data and Computer Science </a> of <a href=\"http://www.sysu.edu.cn/en/index.htm\">Sun Yat-Sen University (SYSU) </a>",
   "cv_url": "files/resume-xht.pdf",
   "education": [
      {
-      "school": "Nanyang Technological University, NTU",
-      "major": "Ph.D. of Computer Science",
-      "period": "Jan. 2021 - Till Now"
-    },
-     {
       "school": "Shanghai Jiao Tong University, SJTU",
-      "major": "Master of Software Engineering",
-      "period": "Sept. 2017 - Mar. 2020"
+      "major": "Master of Computer Science",
+      "period": "Sept. 2019 - Till Now"
     },
     {
-      "school": "Nanjing University, NJU",
+      "school": "Sun Yat-Sen University, SYSU",
       "major": "Bachelor of Software Engineering",
-      "period": "Sept. 2013 - Jun. 2017"
+      "period": "Sept. 2015 - Jun. 2019"
     }
   ],
   "publication": [
