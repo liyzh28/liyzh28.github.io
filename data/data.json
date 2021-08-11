@@ -38,7 +38,14 @@
     {
       "title": "Extracting Attentive Social Temporal Excitation for Sequential Recommendation",
       "author": [
-        "Yunzhe Li","Yue Ding", "Bo Chen", "Xin Xin", "Yule Wang", "Yuxiang Shi", "Ruiming Tang", "Dong Wang"	
+        "Yunzhe Li",
+        "Yue Ding", 
+        "Bo Chen", 
+        "Xin Xin", 
+        "Yule Wang", 
+        "Yuxiang Shi", 
+        "Ruiming Tang", 
+        "Dong Wang"	
       ],
       "author_order": 1,
       "conf_or_jour": "ACM International Conference on Conference on Knowledge Management (CIKM) 2021"
@@ -46,7 +53,12 @@
     {
       "title": "CMT: Cluster-Wise Multi-Objective Training for Long-Tail Recommendation",
       "author": [
-        "Yule Wang", "Xin Xin", "Yue Ding", "Yunzhe Li", "Yuxiang Shi", "Dong Wang"
+        "Yule Wang", 
+        "Xin Xin", 
+        "Yue Ding", 
+        "Yunzhe Li",
+        "Yuxiang Shi", 
+        "Dong Wang"
       ],
       "author_order": 4,
       "conf_or_jour": "IEEE International Conference on Data Mining (ICDM) 2021, Under Review"
@@ -55,7 +67,12 @@
       "title": "AIRec: Attentive intersection model for tag-aware recommendation",
       "url": "https://www.sciencedirect.com/science/article/pii/S0925231220312789?via%3Dihub",
       "author": [
-        "Bo Chen", "Yue Ding", "Xin Xin", "Yunzhe Li", "Yule Wang", "Dong Wang"
+        "Bo Chen", 
+        "Yue Ding", 
+        "Xin Xin", 
+        "Yunzhe Li", 
+        "Yule Wang", 
+        "Dong Wang"
       ],
       "author_order": 4,
       "conf_or_jour": "Neurocomputing (NC), 2021",
@@ -158,10 +175,10 @@
   ],
   "hobby": [
     "Travelling",
-    "Swimming",
-    "Singing",
+    "Badminton",
+    "Jogging",
     "Cooking"
   ],
-  "information": "Latest updated by July 2021",
+  "information": "Latest updated by August 2021",
   "message": ""
 }
