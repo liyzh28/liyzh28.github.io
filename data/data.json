@@ -5,7 +5,7 @@
   },
   "header": {
     "index": true,
-    "news": false,
+    "news": true,
     "research": true,
     "publication": true,
     "fun": true
