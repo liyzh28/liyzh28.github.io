@@ -5,39 +5,80 @@
   },
   "header": {
     "index": true,
-    "news": true,
-    "research": true,
+    "news": false,
+    "research": false,
     "publication": true,
     "fun": true
   },
   "name_en": "Yunzhe Li",
   "name_zn": "李蕴哲",
   "name_tag": "M.S. Student",
-  "tel": "+86 15589351332",
+  "tel": "+86 15553310916",
   "email": "liyzh28@sjtu.edu.cn",
   "website": "liyzh28@github.io",
   "github": "https://github.com/liyzh28",
   "scholar": "https://scholar.google.com/citations?user=QafNtQIAAAAJ",
   "city": "Shanghai, China",
   "avatar": "images/default.JPG",
-  "introduction": "I am a two-year academic master' student from <a href=\"https://english.seiee.sjtu.edu.cn\">SEIEE</a> of <a href=\"https://en.sjtu.edu.cn\">Shanghai Jiao Tong University (SJTU)</a>, supervised by Prof. <a href=\"https://scholar.google.com/citations?user=OBVW2YgAAAAJ&hl=zh-CN&oi=sra\">Dong Wang</a>.\n I received my B.S. degree from the <a herf=\"cse.sysu.edu.cn\"> SDCS </a> of <a href=\"http://www.sysu.edu.cn/en/index.htm\">Sun Yat-Sen University (SYSU) </a>",
+  "introduction": "I am a two-year academic master' student from <a href=\"https://english.seiee.sjtu.edu.cn\">SEIEE</a> of <a href=\"https://en.sjtu.edu.cn\">Shanghai Jiao Tong University (SJTU)</a>, supervised by Prof. <a href=\"https://scholar.google.com/citations?user=OBVW2YgAAAAJ&hl=zh-CN&oi=sra\">Dong Wang</a>.\n I received my B.S. degree from the <a herf=\"cse.sysu.edu.cn\"> SDCS </a> of <a href=\"http://www.sysu.edu.cn/en/index.htm\">Sun Yat-Sen University (SYSU)</a>. My reseach interest lies in data mining, especially for information retrival and recommendation algorithm. I focus on leveraging the social relation and temporal information to improve the performance of recommendation and clustering",
   "cv_url": "files/resume-xht.pdf",
   "education": [
     {
-      "school": "Shanghai Jiao Tong University, SJTU",
+      "school": "Shanghai Jiao Tong University (SJTU), Shanghai, China",
       "major": "Master of Computer Science",
       "period": "Sept. 2019 - Till Now"
     },
     {
-      "school": "Sun Yat-Sen University, SYSU",
+      "school": "Sun Yat-Sen University (SYSU), Guangzhou, China",
       "major": "Bachelor of Software Engineering",
       "period": "Sept. 2015 - Jun. 2019"
     }
   ],
   "publication": [
     {
-     
-   
+      "title": "Extracting Attentive Social Temporal Excitation for Sequential Recommendation",
+      "author": [
+        "Yunzhe Li",
+        "Yue Ding", 
+        "Bo Chen", 
+        "Xin Xin", 
+        "Yule Wang", 
+        "Yuxiang Shi", 
+        "Ruiming Tang", 
+        "Dong Wang"	
+      ],
+      "author_order": 1,
+      "conf_or_jour": "ACM International Conference on Information and Knowledge Management (CIKM) 2021",
+      "resource":{
+      }
+    },
+    {
+      "title": "CMT: Cluster-Wise Multi-Objective Training for Long-Tail Recommendation",
+      "author": [
+        "Yule Wang", 
+        "Xin Xin", 
+        "Yue Ding", 
+        "Yunzhe Li",
+        "Yuxiang Shi", 
+        "Dong Wang"
+      ],
+      "author_order": 4,
+      "conf_or_jour": "IEEE International Conference on Data Mining (ICDM) 2021, Under Review",
+      "resource":{
+      }
+    },
+    {
+      "title": "AIRec: Attentive intersection model for tag-aware recommendation",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231220312789?via%3Dihub",
+      "author": [
+        "Bo Chen", 
+        "Yue Ding", 
+        "Xin Xin", "Yunzhe Li", "Yule Wang", "Dong Wang"
+      ],
+      "author_order": 4,
+      "conf_or_jour": "Neurocomputing (NC), 2021",
+      "resource": {
+      }
     }
   ],
   "honor_award": [
@@ -51,52 +92,24 @@
   ],
   "news": [
     {
-      "date": "Jan. 2021",
-      "content": "Start to pursue for my Ph.D. degree in <span class=\"item-bold\">NTU</span>."
+      "date": "Aug. 2021",
+      "content": "Our paper \"Extracting Attentive Social Temporal Excitation for Sequential Recommendation\" has been accepted by <span class=\"item-bold\">CIKM 2021</span>."
     },
     {
-      "date": "Dec. 2020",
-      "content": "Finish internship at Local Life Research Institute of Alibaba (Eleme)."
-    },
-    {
-      "date": "Apr. 2020",
-      "content": "Start internship at Local Life Research Institute of Alibaba (Eleme)."
-    },
-    {
-      "date": "Mar. 2020",
-      "content": "Graduate from <span class=\"item-bold\">SJTU</span>."
-    },
-    {
-      "date": "Jan. 2020",
-      "content": "Successfully defend my master's thesis."
-    },
-    {
-      "date": "Nov. 2019",
-      "content": "Attend <span class=\"item-bold\">SenSys 2019</span> in New York, USA."
+      "date": "Oct. 2020",
+      "content": "Our paper \"AIRec: Attentive intersection model for tag-aware recommendation\" has been accepted by <span class=\"item-bold\"> Neurocomputing </span> after a cycle of revisions."
     },
     {
       "date": "Sept. 2019",
-      "content": "Attend <span class=\"item-bold\">Ubicomp 2019</span> in London, UK."
+      "content": "Start to pursue for my Master degree in SJTU"
     },
     {
-      "date": "Aug. 2019",
-      "content": "Our paper \"FaHo\" has been accepted by <span class=\"item-bold\">SenSys 2019</span>."
+      "date": "Jun. 2019",
+      "content": "Graduate from <span class=\"item-bold\">SYSU</span>."
     },
     {
-      "date": "Jul. 2019",
-      "content": "Our paper \"AdaRF\" has been accepted by <span class=\"item-bold\">Ubicomp 2019</span> after a cycle of major revisions."
-    },
-    {
-      "date": "Apr. 2019",
-      "content": "Our paper \"PEC\" has been accepted by <span class=\"item-bold\">SECON 2019</span>."
-    },
-    {
-      "date": "Nov. 2018",
-      "content": "Attend <span class=\"item-bold\">MSWiM 2019</span> in Montreal, Canada."
-    },
-    {
-      "date": "Apr. 2019",
-      "content": "Our paper \"PRMS\" has been accepted by <span class=\"item-bold\">MSWiM 2018</span>."
+      "date": "Jan. 2019",
+      "content": "Finished internship at JY Asset Management Ltd."
     }
   ],
   "research": [
@@ -136,6 +149,7 @@
     "Travelling",
     "Badminton",
     "Jogging",
+    "Board Game",
     "Cooking"
   ],
   "information": "Latest updated by August 2021",
