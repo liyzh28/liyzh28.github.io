@@ -6,7 +6,7 @@
   "header":
   {
     "index": true,
-    "news": true,
+    "news": false,
     "research": true,
     "publication": true,
     "fun": true
