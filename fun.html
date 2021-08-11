@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head >
+    <title>Huatao Xu</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300i,400,400i,500,600,700,800,900" rel="stylesheet">-->
+
+    <link rel="icon" type="image/png" href="images/SJTU.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap-table.min.css">
+    <!-- Xman CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body >
+<!-- Header Area -->
+<header class="header shadow-lg">
+    <div class="header-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-2 col-xs-12">
+                </div>
+                <div class="col-md-9 col-sm-10 col-xs-12">
+                    <div class="mobile-menu"></div>
+                    <nav class="navbar navbar-default">
+                        <div class="collapse navbar-collapse">
+                            <ul id="nav" class="nav navbar-nav">
+                                <li v-if="index"><a href="index.html">Home</a></li>
+                                <li v-if="news"><a href="news.html">News</a></li>
+                                <li v-if="research"><a href="research.html">Research</a></li>
+                                <li v-if="publication"><a href="publication.html">Publication</a></li>
+                                <li class="current" v-if="fun"><a href="fun.html">Fun</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ End Header Inner -->
+</header>
+<!-- End Header Area -->
+<div class="main-wrapper" id="container">
+    <div class="container">
+        <article class="shadow-lg resume-wrapper">
+            <h3 class="text-uppercase resume-section-heading mb-4">{{title}}</h3>
+            <p style="white-space: pre-line;">{{intro}}</p>
+            <span></span>
+            <div class="table-responsive">
+                <table id="table-song" class="table  table-borderless" >
+                    <caption></caption>
+                    <thead>
+                    <tr>
+                        <th>  </th>
+                        <th>Name</th>
+                        <th>  </th>
+                        <th data-sortable="true">Singer</th>
+                        <th data-sortable="true">Album</th>
+                        <th data-sortable="true">Style</th>
+                        <th>Links</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr v-for="(song, index) in songs" v-bind:id="'song-'+index">
+                        <td>{{((index + 1) / 100).toFixed(2).slice(-2)}}</td>
+                        <td><span>{{song.name}}</span><span v-if="song.hasOwnProperty('name_tr')"> ({{song.name_tr}})</span></td>
+                        <td>
+                            <span v-if="song.hasOwnProperty('file')" class="table-play-icon" v-bind:id="'btn-play-'+index">
+                                <i class="fa fa-play " v-bind:id="'icon-'+index"></i>
+                            </span>
+                            <span v-else>   </span>
+                        </td>
+                        <td>{{song.singer}}</td>
+                        <td>{{song.album}}</td>
+                        <td>{{song.style}}</td>
+                        <td>
+                            <span v-if="song.hasOwnProperty('youtube_music')">
+                                <a v-bind:href="song.youtube_music" target="_blank"><img class="link-icon" src="images/icon_youtube.ico" title="YouTube Music"/></a>
+                            </span>
+                            <span v-if="song.hasOwnProperty('qq_music')">
+                                <a v-bind:href="song.qq_music" target="_blank"><img class="link-icon" src="images/icon_qq_music.ico" title="QQ Music"/></a>
+                            </span>
+                            <span v-if="song.hasOwnProperty('netease_music')">
+                                <a v-bind:href="song.netease_music" target="_blank"><img class="link-icon" src="images/icon_netease_music.ico" title="Netease Cloud Music"/></a>
+                            </span>
+<!--                            <span v-else class="link-empty"></span>-->
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </article>
+    </div><!--//container-->
+</div>
+
+<div class=" container-audio" id="container-audio">
+    <div class="container-audio-wrapper">
+        <audio class="audio" id="player" autoplay></audio>
+<!--        <iframe src="./songs/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>-->
+
+        <div class="row audio-box" id="audio-box">
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <div class="control-group">
+                    <span class="control-btn hover-green mr-2" v-on:click="next_or_pre(-1)"><i class="fa fa-step-backward "></i></span>
+                    <span class="control-btn hover-green mr-2" id="btn-control" v-on:click="play_or_stop"><i class="fa fa-play-circle"></i></span>
+                    <span class="control-btn hover-green" v-on:click="next_or_pre(1)"><i class="fa fa-step-forward"></i></span>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div>
+                    <span>{{current_song_name}}</span> -
+                    <span>{{current_song_singer}}</span>
+                    <span class="tag-time">
+                            <span>{{tag_current_time}}</span> /
+                            <span>{{tag_total_time}}</span>
+                        </span>
+                </div>
+                <div class="audio-progress">
+                    <div id="container-progress" class="all-progress">
+                        <div id="progress-current" class="current-progress">
+                                <span id="btn-progress" class="progress-button">
+                                    <span class="progress-button-center"></span>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <div class="control-group-right row">
+                    <div class="control-group-right-item ml-2">
+                        <span class="control-btn hover-grey" v-on:click="change_mode"><i id="icon-play-mode" class="fa fa-list"></i></span>
+                    </div>
+                    <div class="control-group-right-item ml-2">
+                        <span class=""><i class="fa fa-volume-up"></i></span>
+                    </div>
+                    <div class="control-group-right-item audio-volume-container">
+                        <div class="audio-volume" id="progress-volume" v-on:click="set_volume">
+                            <div class="all-volume">
+                                <div class="current-volume" id="progress-current-volume"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+<!--            <div class="player-note" id="player-note">The background music will play in <span class="count-time" id="count-time">10</span> seconds.</div>-->
+            <div class="audio-box-control" id="btn-box-control" v-on:click="show_or_hide">
+                <i class="fa fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer class="footer text-center py-4">
+    <small class="copyright"> {{information}}</small>
+</footer>
+
+
+<script src="js/jquery.min.js">  </script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-table.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<!--<script src="js/mediaelement-and-player.min.js"></script>-->
+<!--<script src="js/main.js"></script>-->
+
+<script src="js/share.js"></script>
+</body>
+</html>

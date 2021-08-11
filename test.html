@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--<div id="app">-->
+<!--    <audio src="songs/淘汰.mp3" autoplay loop controls></audio>-->
+<!--</div>-->
+<p class="progress">
+     <p class="progress_bar"> </p>
+    <p class="progress_bg"></p>
+     <p class="progress_btn"></p>
+     <p class="text">0%</p>
+ </p>
+
+<script src="js/jquery.min.js">  </script>
+<script >
+    $(document).ready(function(){
+        var tag = false,dx = 0,left = 0,bgleft = 0;
+        $('.progress_btn').mousedown(function(e) {
+            dx = e.pageX - left;
+            tag = true;
+        });
+        $(document).mouseup(function(e) {
+            tag = false;
+        });
+        $('.progress_btn').mousemove(function(e) {//鼠标移动
+            if (tag) {
+                left = e.pageX - dx;
+                if (left <= 0) {
+                    left = 0;
+                }else if (left > 300) {
+                    left = 300;
+                }
+                $('.progress_btn').css('left', left);
+                $('.progress_bar').animate({width:left},1);
+                $('.text').html(parseInt((left/300)*100) + '%');
+            }
+        });
+        $('.progress_bg').click(function(e) {//鼠标点击
+            if (!tag) {
+                bgleft = $('.progress_bg').offset().left;
+                left = e.pageX - bgleft;
+                if (left <= 0) {
+                    left=0;
+                }else if (left > 300) {
+                    left = 300;
+                }
+                $('.progress_btn').css('left', left);
+                $('.progress_bar').animate({width:left},300);//
+                $('.text').html(parseInt((left/300)*100) + '%');
+            }
+//  alert(left);
+        });
+
+    });
+
+
+</script>
+<style type="text/css">
+    .progress{position: absolute; width:300px;margin:100px auto;}
+    .progress_bg{height: 10px;width:300px; border: 1px solid #ddd; border-radius: 5px;overflow: hidden;background-color:#f2f2f2;}/**/
+    .progress_bar{ width: 0; height: 10px; border-radius: 5px;background: #5FB878;position: absolute; top:1px;}/* position: absolute;*/
+    .progress_btn{width: 20px; height: 20px; border-radius: 5px; position: absolute;background:#fff; left: 0px; margin-left: -10px; top:-5px; cursor: pointer;border:1px #ddd solid;box-sizing:border-box;}
+    .progress_btn:hover{border-color:#F7B824;}
+</style>
+</body>
+</html>

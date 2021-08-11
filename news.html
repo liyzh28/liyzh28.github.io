@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head >
+    <title>Huatao Xu</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300i,400,400i,500,600,700,800,900" rel="stylesheet">-->
+
+    <link rel="icon" type="image/png" href="images/SJTU.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <!-- Xman CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body >
+<!-- Header Area -->
+<header class="header shadow-lg">
+    <div class="header-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-2 col-xs-12">
+                </div>
+                <div class="col-md-9 col-sm-10 col-xs-12">
+                    <div class="mobile-menu"></div>
+                    <nav class="navbar navbar-default">
+                        <div class="collapse navbar-collapse">
+                            <ul id="nav" class="nav navbar-nav">
+                                <li v-if="index"><a href="index.html">Home</a></li>
+                                <li class="current" v-if="news"><a href="news.html">News</a></li>
+                                <li v-if="research"><a href="research.html">Research</a></li>
+                                <li v-if="publication"><a href="publication.html">Publication</a></li>
+                                <li v-if="fun"><a href="fun.html">Fun</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ End Header Inner -->
+</header>
+<!-- End Header Area -->
+<div class="main-wrapper" id="container">
+    <div class="container">
+        <article class="shadow-lg resume-wrapper">
+            <div class="resume-body">
+                <div class="row">
+                    <aside class="resume-aside col-sm-12 col-md-12 col-lg-12">
+                        <section class="education-section py-3">
+                            <h3 class="text-uppercase resume-section-heading mb-4">News</h3>
+                            <ul class="news-list">
+                                <li v-for="item in news" class="mb-2">
+                                    <div class="item-news-date">[{{item.date}}] <span class="item-news-content" v-html="item.content"></span></div>
+
+                                    <div v-if="item.hasOwnProperty('images')"  class="row">
+                                        <div v-for="image in item.images" class="col-sm-12 col-md-4 col-lg-3 news-image-box"><img v-bind:src="image"></div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </section><!--//education-section-->
+                    </aside><!--//resume-aside-->
+                </div><!--//row-->
+            </div><!--//resume-body-->
+            <hr>
+        </article>
+
+    </div><!--//container-->
+
+
+
+</div>
+
+<footer class="footer text-center py-4">
+    <small class="copyright"> {{information}}</small>
+</footer>
+
+
+<script src="js/jquery.min.js">  </script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<!--<script src="js/main.js"></script>-->
+
+
+<script src="js/index-vue.js"></script>
+</body>
+</html>

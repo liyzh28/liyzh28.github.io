@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head >
+    <title>Huatao Xu</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300i,400,400i,500,600,700,800,900" rel="stylesheet">-->
+
+    <link rel="icon" type="image/png" href="images/SJTU.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <!-- Xman CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body >
+<!-- Header Area -->
+<header class="header shadow-lg">
+    <div class="header-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-2 col-xs-12">
+                </div>
+                <div class="col-md-9 col-sm-10 col-xs-12">
+                    <div class="mobile-menu"></div>
+                    <nav class="navbar navbar-default">
+                        <div class="collapse navbar-collapse">
+                            <ul id="nav" class="nav navbar-nav">
+                                <li v-if="index"><a href="index.html">Home</a></li>
+                                <li v-if="news"><a href="news.html">News</a></li>
+                                <li class="current" v-if="research"><a href="research.html">Research</a></li>
+                                <li v-if="publication"><a href="publication.html">Publication</a></li>
+                                <li v-if="fun"><a href="fun.html">Fun</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ End Header Inner -->
+</header>
+<!-- End Header Area -->
+<div class="main-wrapper" id="container">
+    <div class="container">
+        <article class="shadow-lg resume-wrapper">
+            <div class="row">
+                <div v-for="item in research" class="resume-main col-sm-12 col-md-12 col-lg-12">
+                    <section class="publication-section py-3">
+                        <h3 class="text-uppercase resume-section-heading mb-4">{{item.topic}}</h3>
+                        <div v-for="p_item in item.project">
+                            <div><h4 class="mb-2 ">{{p_item.name}}</h4></div>
+                            <div class="item-author">{{p_item.intro}}
+                            </div>
+                            <div v-if="p_item.hasOwnProperty('publication')" class="related_pub">
+                                Related publications:
+                                <span v-for="(pu_item, pu_index) in p_item.publication">
+<!--                                    <span v-if="pu_index != 0">, </span>-->
+                                    <a v-bind:href="pu_item.url" target="_blank">
+                                        {{pu_item.title}}
+                                    </a>
+                                </span>
+                            </div>
+                            <hr>
+                        </div>
+                    </section><!--//work-section-->
+
+                </div><!--//resume-main-->
+            </div><!--//row-->
+        </article>
+
+    </div><!--//container-->
+
+
+
+</div>
+
+<footer class="footer text-center py-4">
+    <small class="copyright"> {{information}}</small>
+</footer>
+
+
+<script src="js/jquery.min.js">  </script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<!--<script src="js/main.js"></script>-->
+
+
+<script src="js/index-vue.js"></script>
+</body>
+</html>

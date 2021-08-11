@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head >
+    <title>Huatao Xu</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300i,400,400i,500,600,700,800,900" rel="stylesheet">-->
+
+    <link rel="icon" type="image/png" href="images/SJTU.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <!-- Xman CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body >
+<!-- Header Area -->
+<header class="header shadow-lg">
+    <div class="header-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-2 col-xs-12">
+                </div>
+                <div class="col-md-9 col-sm-10 col-xs-12">
+                    <div class="mobile-menu"></div>
+                    <nav class="navbar navbar-default">
+                        <div class="collapse navbar-collapse">
+                            <ul id="nav" class="nav navbar-nav">
+                                <li class="current" v-if="index"><a href="index.html">Home</a></li>
+                                <li v-if="news"><a href="news.html">News</a></li>
+                                <li v-if="research"><a href="research.html">Research</a></li>
+                                <li v-if="publication"><a href="publication.html">Publication</a></li>
+                                <li v-if="fun"><a href="fun.html">Fun</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ End Header Inner -->
+</header>
+<!-- End Header Area -->
+<div class="main-wrapper" id="container">
+    <div class="container">
+        <article class="shadow-lg resume-wrapper">
+            <div class="row">
+                <div class="resume-title col-sm-12 col-md-6 col-lg-8">
+                    <h2 class="resume-name text-uppercase">{{name_en}}</h2>
+                    <h2 class="resume-name text-uppercase">{{name_zn}}</h2>
+                    <div class="resume-tag ">{{name_tag}}</div>
+                </div><!--//resume-title-->
+                <div class="resume-contact col-sm-12 col-md-6 col-lg-4">
+                    <ul class="list-unstyled list-contact">
+                        <li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg mr-2 "></i><a class="resume-link" href="tel:#">{{tel}}</a></li>
+                        <li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg mr-2"></i><a class="resume-link" href="mailto:#">{{email}}</a></li>
+                        <li class="mb-2"><i class="fas fa-globe fa-fw fa-lg mr-2"></i><a class="resume-link" href="https://dapowan.github.io/">{{website}}</a></li>
+                        <li class="mb-0"><i class="fas fa-map-marker-alt fa-fw fa-lg mr-2"></i>{{city}}</li>
+                    </ul>
+                </div><!--//resume-contact-->
+
+            </div><!--//resume-header-->
+            <hr>
+            <div class="resume-intro">
+                <div class="row flex-column">
+                    <div class="col-sm-12 col-md-4 col-lg-3"><img class="resume-profile-image" v-bind:src="avatar" alt="image"></div>
+
+                    <div class="resume-profile-text col-sm-12 col-md-8 col-lg-9">
+                        <p class="mb-0">
+                            <span v-html="introduction"></span>
+                            <a v-bind:href="cv_url" class="resume-file-link">[CV]</a>
+                        </p>
+                    </div><!--//media-body-->
+                </div>
+
+            </div><!--//resume-intro-->
+            <hr>
+            <div class="resume-body">
+                <div class="row">
+                    <div class="resume-main col-sm-12 col-md-8 col-lg-8">
+                        <section class="project-section py-3">
+                            <h3 class="text-uppercase resume-section-heading mb-4">Education</h3>
+
+                            <div class="item mb-3" v-for="item in education">
+                                <div class="item-heading row align-items-center mb-2">
+                                    <div class="item-major col-sm-12 col-md-6 col-lg-8">{{item.major}}</div>
+                                    <div class="item-meta col-sm-12 col-md-6 col-lg-4">{{item.period}}</div>
+                                </div>
+                                <div class="item-school">{{item.school}}</div>
+                            </div><!--//item-->
+                        </section><!--//project-section-->
+
+                        <section class="publication-section py-3">
+                            <h3 class="text-uppercase resume-section-heading mb-4">Publications</h3>
+                            <div class="item mb-3" v-for="item in publication">
+                                <a v-bind:href="item.url" target="_blank"><h4 class="item-title mb-2 ">{{item.title}}</h4></a>
+                                <div class="item-author">
+                                    <span v-for="(item_author, index_author) in item.author">
+                                        <span v-if="index_author != 0">, </span>
+                                        <span v-if="item.author_order == index_author + 1" class="item-myself">{{item_author}}</span>
+                                        <span v-else>{{item_author}}</span>
+                                    </span>
+                                </div>
+                                <div class="item-conf-jour">{{item.conf_or_jour}}</div>
+                                <div class="item-resource">
+                                    <a v-if="item.resource.hasOwnProperty('paper_url')" v-bind:href="item.resource.paper_url"><i class="fa fa-file-pdf"></i></a>
+                                    <a v-if="item.resource.hasOwnProperty('slide_url')" v-bind:href="item.resource.slide_url"><i class="fa fa-file-image"></i></a>
+                                    <a v-if="item.resource.hasOwnProperty('video_url')" v-bind:href="item.resource.video_url"><i class="fa fa-file-video"></i></a>
+                                </div>
+                            </div>
+                            <a href="publication.html">Full list</a>
+                        </section><!--//work-section-->
+
+                        <section class="honor-award-section py-3">
+                            <h3 class="text-uppercase resume-section-heading mb-4">Honor & Award</h3>
+                            <ul class="news-list">
+                                <li v-for="item in honor_award">{{item}}</li>
+                            </ul>
+
+                        </section><!--//work-section-->
+
+                    </div><!--//resume-main-->
+                    <aside class="resume-aside col-sm-12 col-md-4 col-lg-4">
+
+                        <section class="education-section py-3">
+                            <h3 class="text-uppercase resume-section-heading mb-4">News</h3>
+                            <ul class="news-list">
+                                <li v-for="item in news" class="mb-2">
+                                    <div class="item-news-date">{{item.date}}</div>
+                                    <div class="item-news-content" v-html="item.content"></div>
+                                </li>
+                            </ul>
+                            <a href="news.html">More news</a>
+                        </section><!--//education-section-->
+
+                        <section class="skills-section py-3">
+                            <h3 class="text-uppercase resume-section-heading mb-4">Languages</h3>
+                            <ul class="list-unstyled resume-lang-list">
+                                <li class="mb-2" v-for="(item, index) in language">
+                                    {{item}}
+                                    <span v-if="index == 0" class="text-muted">(Native)</span>
+                                </li>
+                            </ul>
+                        </section><!--//certificates-section-->
+                        <section class="skills-section py-3">
+                            <h3 class="text-uppercase resume-section-heading mb-4">Hobby</h3>
+                            <ul class="list-unstyled resume-interests-list mb-0">
+                                <li v-for="item in hobby" class="mb-2">{{item}}</li>
+                            </ul>
+                        </section><!--//certificates-section-->
+
+                    </aside><!--//resume-aside-->
+                </div><!--//row-->
+            </div><!--//resume-body-->
+            <hr>
+            <div class="resume-footer text-center">
+                <ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
+                    <li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" target="_blank" href="https://github.com/dapowan"><i class="fab fa-github-square fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">dapowan</span></a></li>
+                    <li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" target="_blank" href="https://scholar.google.com/citations?user=QafNtQIAAAAJ"><i class="fab fa-google fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">Huatao Xu</span></a></li>
+                    <li class="list-inline-item mb-lg-0 mr-lg-3"><a class="resume-link" target="_blank" href="https://www.linkedin.com/in/xu-huatao-91b0051a4/"><i class="fab fa-linkedin fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">Huatao</span></a></li>
+                </ul>
+            </div><!--//resume-footer-->
+        </article>
+
+    </div><!--//container-->
+
+
+
+</div>
+
+<footer class="footer text-center py-4">
+    <small class="copyright"> {{information}}</small>
+</footer>
+
+
+<script src="js/jquery.min.js">  </script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<!--<script src="js/main.js"></script>-->
+
+
+<script src="js/index-vue.js"></script>
+</body>
+</html>
