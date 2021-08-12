@@ -448,8 +448,9 @@ a:hover{
 }
 
 .item-conf-jour{
-	color: #e74c3c;
+	color: #808080;
 	font-weight: bold;
+	font-style: italic;
 }
 
 .item-major{
