@@ -419,6 +419,12 @@ a:hover{
 	font-size: 1.7rem;
 }
 
+.research-fig{
+	max-width: 85%;
+	vertical-align: middle;
+	margin: auto;
+}
+
 .resume-section-heading {
 	position: relative;
 	padding-left: 1rem;
