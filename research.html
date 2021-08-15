@@ -36,7 +36,7 @@
                                 <li v-if="news"><a href="news.html">News</a></li>
                                 <li class="current" v-if="research"><a href="research.html">Research</a></li>
                                 <li v-if="publication"><a href="publication.html">Publication</a></li>
-                                <li v-if="fun"><a href="fun.html">Fun</a></li>
+                                <li v-if="cv"><a href="files/resume-lyz.pdf">CV</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -55,8 +55,9 @@
                     <section class="publication-section py-3">
                         <h3 class="text-uppercase resume-section-heading mb-4">{{item.topic}}</h3>
                         <div v-for="p_item in item.project">
+                            <div  v-if="p_item.hasOwnProperty('fig')"> <img v-bind:src="p_item.fig" class="research-fig" alt="image"></div>
                             <div><h4 class="mb-2 ">{{p_item.name}}</h4></div>
-                            <div class="item-author">{{p_item.intro}}
+                            <div class="item-author"><span class="item-bold">Intro:</span> {{p_item.intro}}
                             </div>
                             <div v-if="p_item.hasOwnProperty('publication')" class="related_pub">
                                 Related publications:

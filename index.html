@@ -37,6 +37,7 @@
                                 <li v-if="research"><a href="research.html">Research</a></li>
                                 <li v-if="publication"><a href="publication.html">Publication</a></li>
                                 <li v-if="fun"><a href="fun.html">Fun</a></li>
+                                <li v-if="cv"><a href="files/resume-lyz.pdf">CV</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -74,7 +75,7 @@
                     <div class="resume-profile-text col-sm-12 col-md-8 col-lg-9">
                         <p class="mb-0">
                             <span v-html="introduction"></span>
-                            <a v-bind:href="cv_url" class="resume-file-link">[CV]</a>
+                            <!-- <a v-bind:href="cv_url" class="resume-file-link">[CV]</a> -->
                         </p>
                     </div><!--//media-body-->
                 </div>
@@ -114,7 +115,7 @@
                                     <a v-if="item.resource.hasOwnProperty('video_url')" v-bind:href="item.resource.video_url"><i class="fa fa-file-video"></i></a>
                                 </div>
                             </div>
-                            <a href="publication.html">Full list</a>
+                            <!-- <a href="publication.html">Full list</a> -->
                         </section><!--//work-section-->
 
                         <section class="honor-award-section py-3">
@@ -136,7 +137,7 @@
                                     <div class="item-news-content" v-html="item.content"></div>
                                 </li>
                             </ul>
-                            <a href="news.html">More news</a>
+                            <!-- <a href="news.html">More news</a> -->
                         </section><!--//education-section-->
 
                         <section class="skills-section py-3">
