@@ -6,9 +6,10 @@
   "header": {
     "index": true,
     "news": true,
-    "research": false,
+    "research": true,
     "publication": true,
-    "fun": false
+    "fun": false,
+    "cv": true
   },
   "name_en": "Yunzhe Li",
   "name_zn": "李蕴哲",
@@ -20,8 +21,7 @@
   "scholar": "https://scholar.google.com/citations?user=QafNtQIAAAAJ",
   "city": "Shanghai, China",
   "avatar": "images/default.JPG",
-  "introduction": "I am a two-year academic master' student from <a href=\"https://english.seiee.sjtu.edu.cn\">SEIEE</a> of <a href=\"https://en.sjtu.edu.cn\">Shanghai Jiao Tong University (SJTU)</a>, supervised by Prof. <a href=\"https://scholar.google.com/citations?user=OBVW2YgAAAAJ&hl=zh-CN&oi=sra\">Dong Wang</a>.\n I received my B.S. degree from the <a herf=\"cse.sysu.edu.cn\"> SDCS </a> of <a href=\"http://www.sysu.edu.cn/en/index.htm\">Sun Yat-Sen University (SYSU)</a>. My reseach interest lies in data mining, especially for information retrival and recommendation algorithm. I focus on leveraging the social relation and temporal information to improve the performance of recommendation and clustering",
-  "cv_url": "files/resume-lyz.pdf",
+  "introduction": "I am Yunzhe Li(Alex), a two-year academic master' student from <a href=\"https://english.seiee.sjtu.edu.cn\">SEIEE</a> of <a href=\"https://en.sjtu.edu.cn\">Shanghai Jiao Tong University (SJTU)</a>, supervised by Prof. <a href=\"https://scholar.google.com/citations?user=OBVW2YgAAAAJ&hl=zh-CN&oi=sra\">Dong Wang</a>.\n I received my B.S. degree from the <a herf=\"cse.sysu.edu.cn\"> SDCS </a> of <a href=\"http://www.sysu.edu.cn/en/index.htm\">Sun Yat-Sen University (SYSU)</a>. My reseach interest lies in data mining, especially for information retrival and recommendation algorithm. I focus on leveraging the social relation and temporal information to improve the performance of recommendation and clustering.",
   "education": [
     {
       "school": "Shanghai Jiao Tong University (SJTU), Shanghai, China",
@@ -114,29 +114,39 @@
   ],
   "research": [
     {
-      "topic": "RFID Sensing",
+      "topic": "Attentive Social Temporal Excitation for Sequential Recommendation",
       "project": [
         {
-          "name": "Localization",
-          "intro": "Analyze the features of RFID signals and design robust indoor localization to locate RFID tags accurately. We propose deep learning enhance holography (DLEH) to design adaptive localization model by combing RFID based synthetic aperture radar (SAR) and convolutional neural network (CNN). We also introduce compress sensing algorithms into RFID localization.",
-          "publication": [
-            {
-              "title": "FaHo",
-              "url": "https://dl.acm.org/citation.cfm?id=3360035"
-            },
-            {
-              "title": "AdaRF",
-              "url": "https://dl.acm.org/citation.cfm?doid=3361560.3351271"
-            },
-            {
-              "title": "PEC",
-              "url": "https://ieeexplore.ieee.org/document/8824882"
-            },
-            {
-              "title": "PRMS",
-              "url": "https://dl.acm.org/citation.cfm?id=3242138"
-            }
-          ]
+          "fig": "images/sten.JPG",
+          "intro": "In collaborative filtering, it is critical to make full use of social information to improve the recommendation quality, which has been proven to be effective because user behavior will be affected by her friends. We propose a novel sequential recommendation framework called Social Temporal Excitation Networks (STEN), which introduces temporal point processes to model the fine-grained impact of friends' behaviors on the user's dynamic interests in an event-level direct paradigm. "
+
+        }
+      ]
+    },
+    {
+      "topic": "Cluster-Wise Multi-Objective Training for Long-Tail Recommendation",
+      "project":[
+        {
+          "fig":"images/cmt.JPG",
+          "intro": "The data used to train a recommender system (RS) usually suffers from severe popularity bias, i.e., the item frequency distribution is a highly skewed long-tail distribution. We find that the gradients coming from head items dominate the overall gradient update process, which further affects the optimization of tail items. Furthermore, we propose a general framework namely Cluster-Wise Multi-Objective Training (CMT) for long-tail recommendation, which is featured with popularity disentanglement, cluster-wise multi-objective optimization, and robust contractive regularization."
+        }
+      ]
+    },
+    {
+      "topic": "Graph-Enhanced Repeat Aware Model for Session-Based Recommendation",
+      "project": [    
+        {
+          "fig": "images/rpg.JPG",
+          "intro": "Session-based recommendation aims to make recommendation through anonymous sessions. To solve the problem of repeat consumption, we propose GRASER, which utilizes graph neural networks (GNN) and an encoder-decoder structure to make recommendation. The session sequence is first converted to the session graph, then the encoder generates the session representation by two attention networks, and the decoder disintegrates it into three components, i.e., status, repeat and explore, to make recommendation under different circumstances and optimize repeat consumption."
+        }
+      ]
+    },
+    {
+      "topic": "Attentive Intersection Model for Tag-Aware Recommendation",
+      "project": [
+        {
+          "fig": "images/airec.JPG",
+          "intro": "Existing tag-aware recommender methods construct user representations through either explicit tagging behaviors or implicit interacted items, which is inadequate to capture multi-aspect user preferences. We propose an attentive intersection model for TRS, to address the above issues. The intersection between user and item tags is exploited to enhance the learning of conjunct features. Finally, the user and item representations are concatenated and fed to factorization machines (FM) for score prediction."
         }
       ]
     }
