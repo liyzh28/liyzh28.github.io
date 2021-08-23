@@ -124,10 +124,10 @@
       ]
     },
     {
-      "topic": "Cluster-Wise Multi-Objective Training for Long-Tail Recommendation",
+      "topic": "Cluster-Wise Multi-Objective Training for Long-Tail Recommendation(under review)",
       "project":[
         {
-          "fig":"images/cmt.JPG",
+      
           "intro": "The data used to train a recommender system (RS) usually suffers from severe popularity bias, i.e., the item frequency distribution is a highly skewed long-tail distribution. We find that the gradients coming from head items dominate the overall gradient update process, which further affects the optimization of tail items. Furthermore, we propose a general framework namely Cluster-Wise Multi-Objective Training (CMT) for long-tail recommendation, which is featured with popularity disentanglement, cluster-wise multi-objective optimization, and robust contractive regularization."
         }
       ]
