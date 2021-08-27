@@ -25,12 +25,12 @@
   "education": [
     {
       "school": "Shanghai Jiao Tong University (SJTU), Shanghai, China",
-      "major": "Master of Computer Science",
+      "major": "Master in Computer Science",
       "period": "Sept. 2019 - Till Now"
     },
     {
       "school": "Sun Yat-Sen University (SYSU), Guangzhou, China",
-      "major": "Bachelor of Software Engineering",
+      "major": "Bachelor in Software Engineering",
       "period": "Sept. 2015 - Jun. 2019"
     }
   ],
@@ -119,12 +119,11 @@
         {
           "fig": "images/sten.JPG",
           "intro": "In collaborative filtering, it is critical to make full use of social information to improve the recommendation quality, which has been proven to be effective because user behavior will be affected by her friends. We propose a novel sequential recommendation framework called Social Temporal Excitation Networks (STEN), which introduces temporal point processes to model the fine-grained impact of friends' behaviors on the user's dynamic interests in an event-level direct paradigm. "
-
         }
       ]
     },
     {
-      "topic": "Cluster-Wise Multi-Objective Training for Long-Tail Recommendation(under review)",
+      "topic": "Cluster-Wise Multi-Objective Training for Long-Tail Recommendation",
       "project":[
         {
           "fig":"images/cmt.JPG",
