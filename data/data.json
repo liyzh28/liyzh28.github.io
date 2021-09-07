@@ -21,7 +21,7 @@
   "scholar": "https://scholar.google.com/citations?user=QafNtQIAAAAJ",
   "city": "Shanghai, China",
   "avatar": "images/default.JPG",
-  "introduction": "I am Yunzhe Li(Alex), a two-year academic master' student from <a href=\"https://english.seiee.sjtu.edu.cn\">SEIEE</a> of <a href=\"https://en.sjtu.edu.cn\">Shanghai Jiao Tong University (SJTU)</a>, supervised by Prof. <a href=\"https://scholar.google.com/citations?user=OBVW2YgAAAAJ&hl=zh-CN&oi=sra\">Dong Wang</a>.\n I received my B.S. degree from the <a herf=\"cse.sysu.edu.cn\"> SDCS </a> of <a href=\"http://www.sysu.edu.cn/en/index.htm\">Sun Yat-Sen University (SYSU)</a>. My reseach interest lies in data mining, especially for information retrival and recommendation algorithm. I focus on leveraging the social relation and temporal information to improve the performance of recommendation and clustering.",
+  "introduction": "I am Yunzhe Li(Alex), a two-year academic master' student from <a href=\"https://english.seiee.sjtu.edu.cn\">SEIEE</a> of <a href=\"https://en.sjtu.edu.cn\">Shanghai Jiao Tong University (SJTU)</a>, supervised by Prof. <a href=\"https://scholar.google.com/citations?user=OBVW2YgAAAAJ&hl=zh-CN&oi=sra\">Dong Wang</a>.\n I received my B.S. degree from the <a herf=\"cse.sysu.edu.cn\"> SDCS </a> of <a href=\"http://www.sysu.edu.cn/en/index.htm\">Sun Yat-Sen University (SYSU)</a>. My reseach interest lies in data mining, especially for sequential data modeling, information retrival and recommendation algorithm. I focus on leveraging the social relation and temporal information to improve the performance of recommendation and clustering.",
   "education": [
     {
       "school": "Shanghai Jiao Tong University (SJTU), Shanghai, China",
@@ -63,7 +63,7 @@
         "Dong Wang"
       ],
       "author_order": 4,
-      "conf_or_jour": "IEEE International Conference on Data Mining (ICDM) 2021, Under Review",
+      "conf_or_jour": "Thirty-Sixth AAAI Conference on Artificial Intelligence 2022, Under Review",
       "resource":{
       }
     },
