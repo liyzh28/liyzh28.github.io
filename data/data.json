@@ -92,6 +92,10 @@
   ],
   "news": [
     {
+      "date": "Sept. 2021",
+      "content":"Receive the SIGIR Student Travel Grant for CIKM. Thank you CIKM!"
+    },
+    {
       "date": "Aug. 2021",
       "content": "Our paper \"Extracting Attentive Social Temporal Excitation for Sequential Recommendation\" has been accepted by <span class=\"item-bold\">CIKM 2021</span>."
     },
@@ -161,6 +165,6 @@
     "Board Game",
     "Cooking"
   ],
-  "information": "Latest updated by August 2021",
+  "information": "Latest updated by Sept. 2021",
   "message": ""
 }
