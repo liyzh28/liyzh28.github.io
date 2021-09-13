@@ -21,16 +21,16 @@
   "scholar": "https://scholar.google.com/citations?user=QafNtQIAAAAJ",
   "city": "Shanghai, China",
   "avatar": "images/default.JPG",
-  "introduction": "I am Yunzhe Li(Alex), a two-year academic master' student from <a href=\"https://english.seiee.sjtu.edu.cn\">SEIEE</a> of <a href=\"https://en.sjtu.edu.cn\">Shanghai Jiao Tong University (SJTU)</a>, supervised by Prof. <a href=\"https://scholar.google.com/citations?user=OBVW2YgAAAAJ&hl=zh-CN&oi=sra\">Dong Wang</a>.\n I received my B.S. degree from the <a herf=\"cse.sysu.edu.cn\"> SDCS </a> of <a href=\"http://www.sysu.edu.cn/en/index.htm\">Sun Yat-Sen University (SYSU)</a>. My reseach interest lies in data mining, especially for sequential data modeling, information retrival and recommendation algorithm. I focus on leveraging the social relation and temporal information to improve the performance of recommendation and clustering.",
+  "introduction": "I am Yunzhe Li(Alex), a two-year academic master' student from <a href=\"https://english.seiee.sjtu.edu.cn\">SEIEE</a> of <a href=\"https://en.sjtu.edu.cn\">Shanghai Jiao Tong University (SJTU)</a>, supervised by Prof. <a href=\"https://scholar.google.com/citations?user=OBVW2YgAAAAJ&hl=zh-CN&oi=sra\">Dong Wang</a>.\n I received my B.S. degree from the <a herf=\"cse.sysu.edu.cn\"> SDCS </a> of <a href=\"http://www.sysu.edu.cn/en/index.htm\">Sun Yat-Sen University (SYSU)</a>. My reseach lies in data mining and information retrival, especially for sequential data modeling and recommendation algorithm. My current works focus on sequential process modeling, graph neural networks and contrastive learning and their applications in recommendation, time forecasting and clustering.",
   "education": [
     {
       "school": "Shanghai Jiao Tong University (SJTU), Shanghai, China",
-      "major": "Master in Computer Science",
-      "period": "Sept. 2019 - Till Now"
+      "major": "M.S. in Computer Science",
+      "period": "Sept. 2019 - Mar. 2022(Expected)"
     },
     {
       "school": "Sun Yat-Sen University (SYSU), Guangzhou, China",
-      "major": "Bachelor in Software Engineering",
+      "major": "B.S. in Software Engineering",
       "period": "Sept. 2015 - Jun. 2019"
     }
   ],
@@ -39,13 +39,13 @@
       "title": "Extracting Attentive Social Temporal Excitation for Sequential Recommendation",
       "author": [
         "Yunzhe Li",
-        "Yue Ding", 
-        "Bo Chen", 
-        "Xin Xin", 
-        "Yule Wang", 
-        "Yuxiang Shi", 
-        "Ruiming Tang", 
-        "Dong Wang"	
+        "Y. Ding", 
+        "B. Chen", 
+        "X. Xin", 
+        "Y. Wang", 
+        "Y. Shi", 
+        "R. Tang", 
+        "D. Wang"	
       ],
       "author_order": 1,
       "conf_or_jour": "ACM International Conference on Information and Knowledge Management (CIKM) 2021",
@@ -53,33 +53,72 @@
       }
     },
     {
-      "title": "CMT: Cluster-Wise Multi-Objective Training for Long-Tail Recommendation",
-      "author": [
-        "Yule Wang", 
-        "Xin Xin", 
-        "Yue Ding", 
-        "Yunzhe Li",
-        "Yuxiang Shi", 
-        "Dong Wang"
-      ],
-      "author_order": 4,
-      "conf_or_jour": "Thirty-Sixth AAAI Conference on Artificial Intelligence 2022, Under Review",
-      "resource":{
-      }
-    },
-    {
       "title": "AIRec: Attentive intersection model for tag-aware recommendation",
       "url": "https://www.sciencedirect.com/science/article/pii/S0925231220312789?via%3Dihub",
       "author": [
-        "Bo Chen", 
-        "Yue Ding", 
-        "Xin Xin", "Yunzhe Li", "Yule Wang", "Dong Wang"
+        "B. Chen", 
+        "Y. Ding", 
+        "X. Xin", 
+        "Yunzhe Li", 
+        "Y. Wang",
+        "D. Wang"
       ],
       "author_order": 4,
       "conf_or_jour": "Neurocomputing (NC), 2021, Pages 105-114",
       "resource": {
       }
+    },
+    {
+      "title": "Modeling Item Popularity and Mining Complex Dependencies for Sequential Recommendation",
+      "author": [
+        "Y. Ding", 
+        "Yunzhe Li",
+        "Y. Wang", 
+        "H. Chen", 
+        "H. Lu", 
+        "D. Wang",
+        "J. Yan"
+      ],
+      "author_order": 2,
+      "conf_or_jour": "In IEEE Transactions on Cybernetics, Under Review",
+      "resource":{
+      }
+    },
+    {
+      "title": "CMT: Cluster-Wise Multi-Objective Training for Long-Tail Recommendation",
+      "author": [
+        "Y. Wang",
+        "X. Xin",
+        "Y. Ding",
+        "Yunzhe Li",
+        "Y. Shi",
+        "D. Wang"
+      ],
+      "author_order": 4,
+      "conf_or_jour": "In ACM Transactions on Information and Systems (TOIS), Under Review",
+      "resource":{
+      }
+    },
+    {
+      "title": "Learning Embeddings for Numerical Features with Multi-nary Encoding",
+      "author": [
+        "B. Chen", 
+        "H. Guo", 
+        "W. Liu",
+        "Y. Ding",
+        "Yunzhe Li",
+        "W. Guo",
+        "Y. Wang", 
+        "Z. He",
+        "R. Tang", 
+        "X. He"
+      ],
+      "author_order": 5,
+      "conf_or_jour": "Submitted to Thirty-Sixth AAAI Conference on Artificial Intelligence (AAAI) 2022",
+      "resource":{
+      }
     }
+
   ],
   "honor_award": [
     "2018 China National Scholarship.",
