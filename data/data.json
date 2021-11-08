@@ -37,6 +37,7 @@
   "publication": [
     {
       "title": "Extracting Attentive Social Temporal Excitation for Sequential Recommendation",
+      "url":"https://dl.acm.org/doi/10.1145/3459637.3482257",
       "author": [
         "Yunzhe Li",
         "Y. Ding", 
@@ -48,8 +49,26 @@
         "D. Wang"	
       ],
       "author_order": 1,
-      "conf_or_jour": "ACM International Conference on Information and Knowledge Management (CIKM'21) ",
-      "url":"http://arxiv.org/abs/2109.13539",
+      "conf_or_jour": "ACM International Conference on Information and Knowledge Management (CIKM) 2021",
+      "resource":{
+      }
+    },
+    {
+      "title": "Learning Embeddings for Numerical Features with Multi-nary Encoding",
+      "author": [
+        "B. Chen", 
+        "H. Guo", 
+        "W. Liu",
+        "Y. Ding",
+        "Yunzhe Li",
+        "W. Guo",
+        "Y. Wang", 
+        "Z. He",
+        "R. Tang", 
+        "X. He"
+      ],
+      "author_order": 5,
+      "conf_or_jour": "Accepted by Thirty-Sixth AAAI Conference on Artificial Intelligence (AAAI) 2022",
       "resource":{
       }
     },
@@ -101,21 +120,19 @@
       }
     },
     {
-      "title": "Learning Embeddings for Numerical Features with Multi-nary Encoding",
-      "author": [
-        "B. Chen", 
-        "H. Guo", 
-        "W. Liu",
+      "title":"Task Aligned Meta-learning based Contrastive Graph for Cold-Start Recommendation",
+      "author":[
+        "Y. Shi", 
         "Y. Ding",
-        "Yunzhe Li",
-        "W. Guo",
+        "Y. Huang", 
+        "B. Chen", 
+        "Yunzhe Li", 
         "Y. Wang", 
-        "Z. He",
-        "R. Tang", 
-        "X. He"
+        "R. Tang",
+        "D. Wang"
       ],
       "author_order": 5,
-      "conf_or_jour": "Submitted to Thirty-Sixth AAAI Conference on Artificial Intelligence (AAAI) 2022",
+      "conf_or_jour": "In the World wide Web Conference (WWW'22), Under Review",
       "resource":{
       }
     }
@@ -205,6 +222,6 @@
     "Board Game",
     "Cooking"
   ],
-  "information": "Latest updated by Sept. 2021",
+  "information": "Latest updated by Nov. 2021",
   "message": ""
 }
